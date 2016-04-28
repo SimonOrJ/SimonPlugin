@@ -1,0 +1,26 @@
+# SimonPlugin Configurations
+# For all format configuration, use {0} as username and {1} as the content.
+
+# For Greylisting and Reports
+sql:
+  hostname: localhost
+  username: username
+  password: password
+  database: minecraft
+
+report:
+  prefix: "&d[Report]"
+
+adminchat:
+  format: "&6Staff // &f{0}: &6{1}"
+  prefix: "&6[AdminChat]"
+  atoggleOn: []
+
+alert:
+  enabled: true
+  format: "&4A&o // &7&o{0}: {1}"
+  commands:
+    exempt:
+      - msg
+    notifyall:
+      - gamemode

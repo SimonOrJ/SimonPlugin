@@ -1,0 +1,47 @@
+name: SimonPlugin
+main: com.simonorj.SimonJPlug.Simon
+version: {$VersionNumber}
+author: SimonOrJ
+commands:
+  a:
+    description: Admin-Chat replacement
+    usage: /a <message>
+    permission: simonplugin.a
+  atoggle:
+    description: Lock player chat in admin chat.
+    usage: /atoggle
+    permission: simonplugin.a
+  colwi:
+    description: Displays link to CoreProtect lookup.
+    usage: /colwi <parameters as if you're using /co l>
+    permission: simonplugin.colwi
+  greylist:
+    description: Displays greylist status, and allows staff to greylist people.
+    usage: /greylist
+  graylist:
+    description: /greylist alias.
+    usage: /greylist
+  nether:
+    description: Returns corresponding coordinates when going through nether portals.
+    usage: /nether [<x> [y] <z>]
+  ping:
+    description: Plays ping pong with the player.
+    usage: /ping
+  report:
+    description: Reports any event.
+    usage: /report <something to report>
+  reports:
+    description: Shows reported reports.
+    usage: /reports <id>
+  simon:
+    description: alias of /simon
+    usage: /simonorj
+  simonorj:
+    description: This is an illegal command.
+    usage: /simonorj
+  simonplugin:
+    description: Information command and reload subcommand.
+    usage: /simonplugin
+  tag:
+    description: Vanilla-friendly tag game.
+    usage: /tag [help|join|leave|it|reset]
