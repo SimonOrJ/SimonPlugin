@@ -22,10 +22,6 @@ commands:
   reports:
     description: Shows reported reports.
     usage: /reports <id>
-  simonorj:
-    aliases: [simon]
-    description: This is an illegal command.
-    usage: /simonorj
   simonplugin:
     description: Information command and reload subcommand.
     usage: /simonplugin
