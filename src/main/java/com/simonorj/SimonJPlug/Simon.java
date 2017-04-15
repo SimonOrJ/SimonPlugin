@@ -19,6 +19,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
@@ -357,7 +358,7 @@ public final class Simon extends JavaPlugin {
 	
 	public final class TagEvents implements Listener {
 	    // Tag
-	    @EventHandler
+	    @EventHandler (priority=EventPriority.HIGH)
 	    public void detectTag(EntityDamageByEntityEvent e) {
 	    	Entity p = e.getDamager();
 	    	Entity dp = e.getEntity();
@@ -372,7 +373,7 @@ public final class Simon extends JavaPlugin {
 	    	}
 	    }
 	    
-	    @EventHandler
+	    @EventHandler (priority=EventPriority.MONITOR)
 	    public void onPlayerQuit(PlayerQuitEvent e) {
 	        // Called when a player leaves a server
 	    	UUID u = e.getPlayer().getUniqueId();
